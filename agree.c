@@ -1,10 +1,13 @@
-#include <cs50.h>
 #include <stdio.h>
 
 int main(void)
 
 {
-    char c = get_char("do you agree? \n");
+    // Prompt the user for their agreement
+    // and respond accordingly.
+    char c;
+    printf("do you agree? \n");
+    scanf(" %c", &c); // Read a single character input
 
     if (c == 'y' || c == 'Y')
     {
@@ -18,4 +21,3 @@ int main(void)
     return 0;
 
 }
-
