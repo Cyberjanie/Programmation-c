@@ -1,16 +1,16 @@
 #include <stdio.h>
-#include <cs50.h>
 
 int main(void)
 {
+
     // Prompt the user for their first name
-    // and greet them with a message.   
+    // and greet them with a message.
+    char prenom[50]; // Declare a character array to hold the name
     printf("Quel est ton prénom ?\n");
     scanf("%s", prenom);
 
-printf("Bonjour, %s\n", prenom);
+    printf("Bonjour, %s\n", prenom);
+    // Return 0 to indicate successful completion
+    return 0;
+}
 
-    }
-
-// This program prompts the user for their first name and greets them.
-// It uses the CS50 library to handle string input.
